@@ -15,9 +15,6 @@ class CompetitionBot(wpilib.IterativeRobot):
 
         self.joystick = wpilib.Joystick(0)
 
-        self.gearLight1 = wpilib.DigitalOutput(0)
-        self.gearLight2 = wpilib.DigitalOutput(1)
-
     def teleopPeriodic(self):
         pass # your code goes here!
 
