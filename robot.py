@@ -4,14 +4,10 @@ import ctre
 class CompetitionBot(wpilib.IterativeRobot):
 
     def robotInit(self):
-        self.frontLeft = ctre.CANTalon(2)
-        self.frontRight = ctre.CANTalon(1)
-        self.backLeft = ctre.CANTalon(0)
-        self.backRight = ctre.CANTalon(3)
-
-        self.climber = ctre.CANTalon(4)
-        self.flywheel = ctre.CANTalon(5)
-        self.feeder = ctre.CANTalon(7)
+        self.frontLeft = ctre.WPI_TalonSRX(2)
+        self.frontRight = ctre.WPI_TalonSRX(1)
+        self.backLeft = ctre.WPI_TalonSRX(0)
+        self.backRight = ctre.WPI_TalonSRX(3)
 
         self.joystick = wpilib.Joystick(0)
 
