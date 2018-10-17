@@ -11,7 +11,7 @@ class CompetitionBot(wpilib.IterativeRobot):
 
         self.joystick = wpilib.Joystick(0)
 
-    def teleopPeriodic(self):
+    def autonomousPeriodic(self):
         pass # your code goes here!
 
 if __name__ == "__main__":
